@@ -30,8 +30,7 @@ def generate_logs():
     current_time = datetime(2024, 1, 15, 10, 0, 0)
 
     total_entries = 200
-    anomaly_positions = [25, 50, 75, 120, 150, 175, 190]
-
+    anomaly_positions = random.sample(range(100), 7)
     for i in range(total_entries):
         if i in anomaly_positions:
             if i == 25:
